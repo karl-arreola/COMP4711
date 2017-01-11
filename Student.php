@@ -8,10 +8,10 @@
  */
 class Student
 {
-    function _construct() {
+    function __construct() {
         $this->surname = '';
         $this->first_name = '';
-        $this->email = array();
+        $this->emails = array();
         $this->grades = array();
     }
 
@@ -29,17 +29,18 @@ class Student
             $total += $value;
         }
 
-        return $total/ count($this->grades);
+        return $total/count($this->grades);
     }
 
     function toString() {
         $result = $this->first_name . ' ' . $this->surname;
-        $result - ' (' . $this->average() . " )\n";
-        foreach ($this->emails as $which => $what) {
-            $result = $which . ': ' . $what . "\n";
+        $result .= ' ('.$this->average().")\n";
+        foreach($this->emails as $which=>$what) {
+            $result .= $which . ': ' . $what . "\n";
         }
-        $result = "\n";
 
-        return '<pre>' . $result . '</pre>';
+        $result .= "\n";
+        return '<pre>'.$result.'</pre>';
     }
 }
+
