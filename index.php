@@ -15,7 +15,7 @@
     </head>
     <body>
         <?php
-            echo "Hello out there... I live"
+            echo "Hello out there ... I live"
         ?>
     </body>
 </html>
