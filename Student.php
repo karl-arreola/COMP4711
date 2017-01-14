@@ -23,6 +23,7 @@ class Student
         $this->grades[] = $grade;
     }
 
+    //calculate average of all grades
     function average() {
         $total = 0;
         foreach ($this->grades as $value) {
@@ -32,6 +33,7 @@ class Student
         return $total/count($this->grades);
     }
 
+    //print all information stored about student
     function toString() {
         $result = $this->first_name . ' ' . $this->surname;
         $result .= ' ('.$this->average().")\n";

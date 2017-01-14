@@ -19,6 +19,7 @@
 
             $students = array();
 
+            //add values of first student
             $first = new Student();
             $first->surname = "Doe";
             $first->first_name = "John";
@@ -29,6 +30,7 @@
             $first->add_grade(55);
             $students['j123'] = $first;
 
+            //add values of second student
             $second = new Student();
             $second->surname = "Einstein";
             $second->first_name = "Albert";
@@ -40,6 +42,7 @@
             $second->add_grade(50);
             $students['a456'] = $second;
 
+            //add values of third student
             $third = new Student();
             $third->surname = "Arreola";
             $third->first_name = "Karl";
@@ -49,6 +52,7 @@
             $third->add_grade(100);
             $students['a009'] = $third;
 
+            //print all students
             foreach($students as $student) {
                 echo $student->toString();
             }
