@@ -50,6 +50,7 @@
             $third->add_grade(100);
             $third->add_grade(100);
             $third->add_grade(100);
+            $third->add_grade(100);
             $students['a009'] = $third;
 
             //print all students

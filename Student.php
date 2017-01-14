@@ -33,7 +33,7 @@ class Student
         return $total/count($this->grades);
     }
 
-    //print all information stored about student
+    //print all information stored about each student
     function toString() {
         $result = $this->first_name . ' ' . $this->surname;
         $result .= ' ('.$this->average().")\n";
